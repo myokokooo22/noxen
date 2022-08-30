@@ -1,0 +1,29 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans&display=swap');
+
+*{
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'DM Sans', sans-serif;
+
+    height: 100vh;
+    background:linear-gradient(
+        rgba(0,0,0,0.4),
+        rgba(0,0,0,0.3)
+    ) ,url('../assets/img/banner/banner2.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+/* START HEADER SECTION  */
+.nav-btns{
+    background-color: transparent;
+    border: 0;
+}
+
+.socialicons{
+   display: flex;
+}
+/* END HEADER SECTION  */
