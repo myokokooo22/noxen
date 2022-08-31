@@ -100,3 +100,15 @@ body{
     height: 5px;
 }
 /* END SERVICE SECTION  */
+
+/* START PROJECT SECTION  */
+.projectsections{
+    height: 70vh;
+    background:linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.3)), url('../assets/img/banner/banner1.jpg');
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+
+}
+/* END PROJECT SECTION  */
