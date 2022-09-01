@@ -9,3 +9,9 @@ const btnclose = document.querySelector('.btn-close').addEventListener('click',(
     
 });
 // END NAVBAR TOGGLER IN MOBILE VIEW 
+
+// START FOOTER SECTION 
+const year = document.getElementById('years');
+var date = new Date().getUTCFullYear();
+year.textContent = date;
+// END FOOTER SECTION 

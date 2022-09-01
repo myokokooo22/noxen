@@ -6,26 +6,29 @@
 }
 
 body{
-    /* height: 100vh; */
+    height: 100vh;
     margin: 0;
-
-    background:linear-gradient(
-        rgba(0,0,0,0.4),
-        rgba(0,0,0,0.3)
-    ) ,url('../assets/img/banner/banner2.jpg');
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-attachment: fixed;
-    background-position: center;
-
     font-family: 'DM Sans', sans-serif;
 
     position: relative;
 }
 
+/* START ADDRESS BAR  */
+@media (max-width: 1200px){
+    .brandnames{
+        position: absolute;
+        margin-top: 20px;
+    }
+
+    .brandnames a h4{
+        font-size: 5rem;
+    }
+}
+/* END ADDRESS BAR  */
+
 /* START HEADER SECTION  */
 header{ 
-    height: 100vh;
+    /* height: 100%; */
     background:linear-gradient(
         rgba(0,0,0,0.4),
         rgba(0,0,0,0.3)
@@ -41,7 +44,7 @@ header{
 @media (max-width: 1200px) {
    
     header{
-        height: 100vh;
+        height: 100%;
         overflow: hidden;
     }
 }
@@ -65,7 +68,7 @@ header{
 /* Start Navbar Toggle Block in mobile view  */
 
 .navbar-toggle-blocks{
-    height: 100vh;
+    height: 100%;
     width: 350px;
     background-color: #f5f5f5;
 
@@ -98,7 +101,7 @@ header{
 
 @media (max-width: 1200px) {
     .navbar-toggle-blocks{
-        height: 100vh;
+        height: 100%;
     }
 }
 /* End Navbar Toggle Block in mobile view  */
@@ -132,6 +135,34 @@ header{
 
     .texts p{
         font-size: 2.5rem;
+    }
+
+    .btn-danger.aboutuss{
+        padding: 20px;
+        border-radius: 20px;
+        letter-spacing: 3px;
+        text-transform: uppercase;
+    }
+
+    .down-mobileviews{
+        color: tomato;
+        position: absolute;
+        bottom: 13%;
+        left: 50%;
+
+        animation: myani01 0.9s ease infinite alternate-reverse;
+    }
+    
+    @keyframes myani01 {
+        from{
+            bottom: 13%;
+            opacity: 0.5;
+        }
+
+        to{
+            bottom: 11%;
+            opacity: 1;
+        }
     }
 }
 /* End Banner Section  */
@@ -168,20 +199,131 @@ header{
 
 @media (max-width:1200px) {
     .projectsections{
-        height: 25vh;
+        height: 30vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
     }
 }
 /* END PROJECT SECTION  */
 
-.lines{
-    width: 75px;
+.underlines{
+    width: 120px;
     height: 2px;
     background-color: orangered;
-    margin: 0 170px;
+    margin: auto;
+}
+
+/* START MORE SERVICE SECTION */
+
+.servicesections{
+    height: 100%;
+    background:linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.3)), url('../assets/img/banner/banner1.jpg');
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.cards{
+    background-color: transparent;
+    border: 0;
+    color: white;
+    text-align: center;
+}
+
+.cards .card-header{
+    border: 0;
+}
+
+
+.cards .card-header .icon .fas{
+    width: 100px;
+    height: 100px;
+    font-size: 3rem;
+    border: 2px solid red;
+    border-radius: 50%;
+    margin: 10px 0;
+    text-align: center;
+    line-height: 100px;
+}
+
+/* END MORE SERVICE SECTION */
+
+/* START CLIENT SECTION  */
+.cards1{
+    background-color: #fff;
+    border: 0;
+    box-shadow: 0px 5px 30px -5px rgba(0,0,0,0.3);
+    text-align: center;
+}
+.cards1 .card-header{
+    border: 0;
+    background-color: #fff;  
+}
+
+.cards1 .users .userimgs{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+}
+/* END CLIENT SECTION  */
+
+/* START QUALITY SECTION  */
+.qualityservices{
+    height: 100vh;
+    background:linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.3)), url('../assets/img/banner/banner2.jpg');
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 @media (max-width: 1200px) {
-    .lines{
-        display: none;
+    .qualityservices{
+        height: 50vh;
+        text-align: center;
     }
 }
+/* END QUALITY SECTION  */
+
+/* START BLOGS SECTION  */
+.blogs-imgs{
+    width: 100%;
+}
+
+.blog-links{
+    font-size: 20px;
+}
+
+.blog-links:hover{
+    color: orangered;
+}
+
+/* END BLOGS SECTION  */
+
+/* START FOOTER SECTION  */
+footer .inputs{
+    padding: 10px 0;
+    border-radius: 0;
+}
+
+footer .inputs:focus{
+    border: 0;
+    box-shadow: none;
+}
+
+footer .btns{
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    border-radius: 40px;
+}
+
+footer .links li a:hover{
+    color: #fff;
+}
+/* END FOOTER SECTION  */
