@@ -197,6 +197,10 @@ header{
     background-size: cover;
 }
 
+.numbers{
+    color: #c6a99e;
+}
+
 @media (max-width:1200px) {
     .projectsections{
         height: 30vh;
@@ -252,7 +256,7 @@ header{
 
 /* START NEWS AND EVENT SECTION  */
 .cards2{
-    height: 250px;
+    height: 300px;
     background-color: transparent;
     border: 0;
 
